@@ -14,13 +14,10 @@ end
 snip(language-vim). let mapleader=","
 set nocompatible                " Vim > Vi
 filetype off
-
 "" Vundle
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-
 source ~/.vim/Vimfile
-
 "" General
 filetype plugin indent on
 let &winheight=&lines*2/3
