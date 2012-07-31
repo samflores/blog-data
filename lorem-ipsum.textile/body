@@ -2,32 +2,37 @@ h1. Lorem Ipsum
 
 %(preview)Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.%
 
-snip(language-ruby). module Foo
+bc(language-ruby).. module Foo
   class bar
     def initialize(name, &block)
       @name = name
       yield
     end
+
+    # method
+    def method
+      puts "ha"
+    end
   end
 end
 
-snip(language-vim). let mapleader=","
-  set nocompatible                " Vim > Vi
-  filetype off
-  
-  "" Vundle
-  set rtp+=~/.vim/bundle/vundle/
-  call vundle#rc()
-  source ~/.vim/Vimfile
-  
-  "" General
-  filetype plugin indent on
-  let &winheight=&lines*2/3
-  let &winwidth=&columns*2/3
-  set undofile
-  set undodir=~/.vim/undos
-  set spell spelllang=en_us       " activate spell checking
-  set encoding=utf-8              " utf-8 FTW
-  set showcmd                     " display incomplete commands
+bc(language-vim).. let mapleader=","
+set nocompatible                " Vim > Vi
+filetype off
 
-Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?
+" Vundle
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+source ~/.vim/Vimfile
+
+" General
+filetype plugin indent on
+let &winheight=&lines*2/3
+let &winwidth=&columns*2/3
+set undofile
+set undodir=~/.vim/undos
+set spell spelllang=en_us       " activate spell checking
+set encoding=utf-8              " utf-8 FTW
+set showcmd                     " display incomplete commands
+
+p. Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?
