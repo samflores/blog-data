@@ -11,4 +11,24 @@ snip(language-ruby). module Foo
   end
 end
 
+snip(language-vim). let mapleader=","
+set nocompatible                " Vim > Vi
+filetype off
+
+"" Vundle
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+source ~/.vim/Vimfile
+
+"" General
+filetype plugin indent on
+let &winheight=&lines*2/3
+let &winwidth=&columns*2/3
+set undofile
+set undodir=~/.vim/undos
+set spell spelllang=en_us       " activate spell checking
+set encoding=utf-8              " utf-8 FTW
+set showcmd                     " display incomplete commands
+
 Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?
